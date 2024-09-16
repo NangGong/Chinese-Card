@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>汉语新解</title>
+    <!-- 引入 layui.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/layui@2.9.16/dist/css/layui.min.css">
+    <style>
+        .form-container {
+            display: flex;
+            justify-content: center;
+            /* 水平居中 */
+            align-items: center;
+            /* 垂直居中 */
+            height: 100vh;
+            /* 使容器高度占满视口高度，从而实现垂直居中 */
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #f5f5f5;
+            color: #333;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <form action="putCard.php" method="GET" target="_blank">
+            <div class="layui-input-group">
+                <input type="text" name="msg" value="" class="layui-input" placeholder="输入词语">
+                <div class="layui-input-suffix">
+                    <button type="submit" class="layui-btn layui-bg-blue">确认</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        南宫柠檬
+    </footer>
+
+
+    <!-- 引入 layui.js -->
+    <script src="https://cdn.jsdelivr.net/npm/layui@2.9.16/dist/layui.min.js"></script>
+
+</body>
+
+</html>

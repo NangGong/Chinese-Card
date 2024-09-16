@@ -1,0 +1,4 @@
+<?php
+$openapikey = "";
+$domain = "";
+$model = "";
